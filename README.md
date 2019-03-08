@@ -2,7 +2,7 @@
 
 A [PouchDB](https://pouchdb.com/) session store for [express.js](http://expressjs.com/).
 
-[![Build Status](https://travis-ci.org/solzimer/session-pouchdb-store.svg?branch=master)](https://travis-ci.org/solzimer/session-pouchdb-store)
+[![Build Status](https://travis-ci.org/Ioannis-Karasavvaidis/session-pouchdb-store.svg?branch=master)](https://travis-ci.org/Ioannis-Karasavvaidis/session-pouchdb-store)
 
 ## Features
 * Compatible with PouchDB and CouchDB (or any database that uses the CouchDB API).
@@ -92,7 +92,7 @@ var options = {
 	maxIdle : 5*60*1000,
 	// Scavenge period in ms
 	scavenge : 1000,
-	// Database purge period in ms					
-	purge : 5*60*1000			
+	// Database purge period in ms
+	purge : 5*60*1000
 };
 ```

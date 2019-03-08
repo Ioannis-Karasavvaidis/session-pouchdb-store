@@ -1,11 +1,10 @@
 {
-  "name": "session-pouchdb-store",
-  "version": "0.2.2",
+  "name": "@puppet/session-pouchdb-store",
+  "version": "1.0.0",
   "description": "PouchDB express session store. Can do realtime session data synchronization via PouchDB server",
-  "author": "David Gómez Matarrodona <solzimer@gmail.com>",
-  "email": "solzimer@gmail.com",
+  "author": "",
   "license": "MIT",
-  "repository": "solzimer/session-pouchdb-store",
+  "repository": "Ioannis-Karasavvaidis/session-pouchdb-store",
   "main": "index.js",
   "keywords": [
     "pouchdb",
@@ -23,13 +22,14 @@
   },
   "dependencies": {
     "express-session": "^1.15.6",
-    "extend": "^3.0.1",
-    "pouchdb": "^6.4.3",
-    "pouchdb-adapter-memory": "^6.4.1"
+    "extend": "^3.0.2",
+    "pouchdb": "^7.0.0",
+    "pouchdb-adapter-memory": "^7.0.0"
   },
   "devDependencies": {
-    "express": "^4.16.2",
-    "express-pouchdb": "^2.3.7",
-    "mocha": "^5.0.0"
+    "eslint": "^5.15.1",
+    "express": "^4.16.4",
+    "express-pouchdb": "^4.1.0",
+    "mocha": "^6.0.2"
   }
 }
