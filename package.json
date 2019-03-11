@@ -4,6 +4,9 @@
   "description": "PouchDB express session store. Can do realtime session data synchronization via PouchDB server",
   "author": "",
   "license": "MIT",
+  "publishConfig": {
+      "registry": "https://artifactory.delivery.puppetlabs.net/artifactory/api/npm/npm/"
+    },
   "repository": "Ioannis-Karasavvaidis/session-pouchdb-store",
   "main": "index.js",
   "keywords": [
