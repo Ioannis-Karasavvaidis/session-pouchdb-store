@@ -29,15 +29,20 @@ describe('Basic features', function() {
 	});
 
 	describe('#touch(sid, cb)', function() {
+		beforeEach(async () => {
+			await new Promise((resolve) => {
+				setTimeout(() => resolve(), 1000)
+			});
+		})
 		it('Should refresh session', function(done) {
 			let oldts = session1.$ts;
-			store.touch(SID1, session1, function(err, sess){
-				store.get(SID1, function(err, sess){
-					assert(oldts<sess.$ts,"New timestamp");
-					done();
+				store.touch(SID1, session1, function(err, sess){
+					store.get(SID1, function(err, sess){
+						assert.ok(oldts < sess.$ts, 'New Timestamp');
+						done();
+					});
 				});
 			});
-		});
 	});
 
 	describe('#destroy(sid, cb)', function() {
