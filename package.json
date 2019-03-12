@@ -1,6 +1,6 @@
 {
   "name": "@puppet/session-pouchdb-store",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PouchDB express session store. Can do realtime session data synchronization via PouchDB server",
   "author": "",
   "license": "MIT",
